@@ -1,0 +1,47 @@
+# Author details and statements for the title page (title-page.qmd). The
+# anonymous manuscript does not read this file.
+#
+# The guidelines list: the names of the authors; their affiliations
+# (institution, department, city, state, country); a clear indication and
+# an active e-mail address of the corresponding author; ORCIDs, if
+# available; acknowledgments; and the statements and declarations.
+
+author:
+  - name: First Author
+    email: first.author@university.edu
+    orcid: 0000-0000-0000-0000
+    corresponding: true
+    affiliations:
+      - name: University Name
+        department: Department of Marketing
+        city: City
+        region: State
+        country: Country
+  - name: Second Author
+    orcid: 0000-0000-0000-0000
+    affiliations:
+      - name: Another University
+        department: School of Business
+        city: City
+        country: Country
+
+acknowledgments: |
+  The authors thank the editor and the review team for their comments.
+
+# The guidelines give sample statements under "Competing Interests". Write
+# the names of funding organizations in full, or state that no funding was
+# received. Delete the entries that do not apply.
+declarations:
+  funding: |
+    This research was supported by [name of the funding organization]
+    (grant number [number]).
+  competing-interests: |
+    The authors declare no competing interests.
+  ethics: |
+    The study was approved by [name of the ethics committee] (approval
+    number [number]).
+  consent: |
+    All participants gave their informed consent.
+  author-contributions: |
+    [Who designed the study, who collected and analyzed the data, and who
+    wrote the manuscript.]

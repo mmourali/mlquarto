@@ -1,0 +1,38 @@
+---
+# ======================================================================
+# Marketing Letters Online Appendix (mlquarto 1.0.0)
+# ======================================================================
+# Online-only appendixes accompany a submission as a separate file. The
+# guidelines limit them to 2,000 words; the extension reports the word
+# count of this file. Tables, figures, and equations are numbered
+# separately from those of the article. To set them apart by a prefix as
+# well, use ml-appendix-prefix: "S" gives Table S1 and Fig. S1. Keep the
+# file anonymous.
+# ======================================================================
+
+title: "How social media influencers build brand loyalty among millennial consumers"
+ml-mode: online-appendix
+# ml-appendix-prefix: "S"
+
+format:
+  mlquarto-docx: default
+  mlquarto-pdf: default
+  mlquarto-latex: default
+
+bibliography: bibliography.bib
+---
+
+# Survey items
+
+@tbl-items lists the items of the brand loyalty scale.
+
+| Item | Wording                                         |
+|:-----|:------------------------------------------------|
+| 1    | I intend to keep buying this brand.             |
+| 2    | I would recommend this brand to a friend.       |
+
+: Brand loyalty items {#tbl-items}
+
+# Additional analyses
+
+Report additional analyses here.

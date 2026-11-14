@@ -1,0 +1,81 @@
+title: Marketing Letters Manuscript Format
+author: mlquarto
+version: 1.0.0
+quarto-required: ">=1.4.0"
+contributes:
+  formats:
+    common:
+      csl: apa.csl
+      number-sections: true
+      link-citations: true
+      tbl-cap-location: top
+      fig-cap-location: bottom
+      # Labels "Table 1" and "Fig. 1" in captions and in the text
+      crossref:
+        fig-title: Fig.
+        tbl-title: Table
+        fig-prefix: Fig.
+        tbl-prefix: Table
+        eq-prefix: Equation
+      filters:
+        - mlquarto.lua
+        - at: post-render
+          path: mlquarto-post.lua
+    pdf:
+      pdf-engine: pdflatex
+      documentclass: article
+      papersize: letter
+      fontsize: 12pt
+      linestretch: 2
+      geometry:
+        - margin=1in
+      indent: true
+      include-in-header:
+        - ml-header.tex
+      template-partials:
+        - partials/doc-class.tex
+        - partials/title.tex
+        - partials/before-body.tex
+        - partials/before-bib.tex
+      # Keep the .tex next to the PDF, so that rendering all formats at once
+      # does not delete the mlquarto-latex output
+      keep-tex: true
+      fig-pos: "H"
+      # Quarto promotes every heading by one level when sections are numbered
+      # and the .qmd file has no level-1 heading; the headings that the filter
+      # adds (on a title page, for example) would then be set as paragraphs
+      shift-heading-level-by: 0
+      # Images written without an extension use the vector PDF version
+      default-image-extension: pdf
+      colorlinks: true
+      urlcolor: "black"
+      linkcolor: "black"
+      citecolor: "black"
+    # The same document as the PDF, written as a .tex file (compile with pdflatex)
+    latex:
+      pdf-engine: pdflatex
+      default-image-extension: pdf
+      documentclass: article
+      papersize: letter
+      fontsize: 12pt
+      linestretch: 2
+      geometry:
+        - margin=1in
+      indent: true
+      include-in-header:
+        - ml-header.tex
+      template-partials:
+        - partials/doc-class.tex
+        - partials/title.tex
+        - partials/before-body.tex
+        - partials/before-bib.tex
+      fig-pos: "H"
+      shift-heading-level-by: 0
+      colorlinks: true
+      urlcolor: "black"
+      linkcolor: "black"
+      citecolor: "black"
+    docx:
+      reference-doc: ml-reference.docx
+      # Images written without an extension use the PNG version
+      default-image-extension: png

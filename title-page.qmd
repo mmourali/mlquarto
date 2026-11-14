@@ -1,0 +1,21 @@
+---
+# ======================================================================
+# Marketing Letters Title Page (mlquarto 1.0.0)
+# ======================================================================
+# The author details and statements that the guidelines list for the title
+# page: names, affiliations, the e-mail address of the corresponding
+# author, ORCIDs, acknowledgments, funding, and declarations. The journal's
+# submission system asks for them in its own fields, so that the
+# manuscript stays anonymous; this file gathers them in one place. Edit
+# them in _title-page.yml.
+# ======================================================================
+
+title: "How social media influencers build brand loyalty among millennial consumers"
+ml-mode: title-page
+metadata-files:
+  - _title-page.yml
+
+format:
+  mlquarto-docx: default
+  mlquarto-pdf: default
+---
